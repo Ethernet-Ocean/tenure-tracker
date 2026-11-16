@@ -17,6 +17,7 @@
     ["voices.html", "STUDENT VOICES", "voices"],
     ["feedback.html", "FEEDBACK → ACTION", "feedback"],
     ["evidence.html", "TEACHING EVIDENCE", "evidence"],
+    ["dma10.html", "DMA 10 AUDIT", "dma10"],
     ["ethics.html", "EVIDENCE VAULT", "ethics"]
   ];
   const die = `<svg class="die" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="26" height="26" rx="7" fill="#F06B9B" stroke="#0d0f24" stroke-width="3"/><circle cx="11" cy="11" r="2.6" fill="#FAEF88"/><circle cx="21" cy="21" r="2.6" fill="#FAEF88"/><circle cx="16" cy="16" r="2.6" fill="#FAEF88"/></svg>`;
@@ -227,6 +228,10 @@
     FB.forEach((t) => R.push([`Response to "${t.theme}": ${t.responses.join("; ") || "none reported"}`, "Teaching improvement", "Instructor's brief (Nov 16, 2026)", "n/a", t.course, "Self-report", "Unavailable: no dated evidence", "Public-safe", "Instructor", "Feedback → Action"]));
     OBS.forEach((o) => R.push([`${o.type} of ${o.course} by ${o.evaluator}`, "Teaching (faculty observation)", "Not provided", "n/a", `${o.course} · Fall 2026`, "Observation", "Unavailable", "Restricted until reviewed", "Pending", "Student Voices (listed only)"]));
     P.forEach((p) => R.push([`Case study: ${p.title}`, "Student work", p.evidence.map((x) => x[0]).join(", "), "Drive · Student Work folder", p.courseStatus === "verified" ? `${p.course} · Fall 2026` : "Course Not Verified · Fall 2026", "Work sample", p.status === "partial" ? "Partial (content inspected; course/goal unverified)" : "Awaiting (preview frame only)", "Restricted media; anonymized description public", "Pending", "Student Creations"]));
+    R.push(['DMA 10 Canvas structure: 4 units, 16 weekly Discover/Discuss/Demonstrate modules', 'Teaching (course design)', 'Canvas export dma-10-...-71864-export.imscc', 'course_settings/module_meta.xml', 'DMA 10 · exported Aug 25, 2026', 'Course export', 'Verified for Aug 25; state during term unverified', 'Public-safe', 'Instructor', 'DMA 10 Audit']);
+    R.push(['DMA 10 UDL tutorial credit option', 'Teaching (UDL)', 'DMA10_71864_Marshall (1).pdf', 'p. 8', 'DMA 10 · file dated Oct 12, 2026', 'Syllabus', 'Verified that the option is stated; student use unverified', 'Public-safe', 'Instructor', 'DMA 10 Audit']);
+    R.push(['DMA 10 Roblox obby: DMA 15 playtest feedback and revision guide (7 projects)', 'Teaching (formative feedback)', 'DMA10_DMA15_Playtest_Feedback.docx', 'Whole document', 'DMA 10 · Sep 30, 2026', 'Instructor-authored feedback', 'Verified that it exists; delivery to students unverified', 'Restricted (student names); summarized only', 'Instructor', 'DMA 10 Audit']);
+    R.push(['Oct 27 Unity physics lesson plans (5 files) and Castaño observation', 'Teaching (lesson / observation)', 'Not provided', 'n/a', 'DMA 10 · Oct 27, 2026', 'Lesson plan / observation', 'Unavailable', 'Pending', 'Pending', 'DMA 10 Audit (listed as missing)']);
     R.push([`Inventory of ${COV.length} Drive files`, "Student work", "Drive · Student Work folder", "Weeks 1–3 / 4–6 / 7–9", "Fall 2026", "Inventory", "Verified (listing); depth varies per file", "Public-safe (no filenames)", "n/a", "Evidence Vault"]);
     $("#reg").innerHTML = R.map((r) => `<tr>${r.map((c, i) => `<td${i ? ' class="small"' : ""}>${esc(c)}</td>`).join("")}</tr>`).join("");
   }
