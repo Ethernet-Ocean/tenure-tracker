@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Creations · Professor Ocean: Tenure Quest</title>
+<meta name="description" content="Student Creations: Learning in Action. Anonymized case studies and a searchable catalogue of Fall 2026 student work in DMA 10, 15 and 40.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="creations">
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="stars" aria-hidden="true"></canvas>
+<header id="bar" class="bar"></header>
+
+<main id="main">
+  <section style="padding-bottom:20px">
+    <div class="wrap">
+      <p class="sub">Stage 1 · Fall 2026</p>
+      <h1 style="font-size:clamp(26px,4.6vw,48px)">STUDENT CREATIONS —<br>LEARNING IN ACTION</h1>
+      <p class="lede">I reviewed 85 files from the course Drive by their content. 15 projects are written up as case studies, each covering the learning objective, the student's achievement, the skills shown, how the work connects to instruction, and the evidence behind it.</p>
+      <div class="callout gold" style="margin-top:16px"><b>Draft, not yet published.</b> The Drive folder is organised by week, not by course. Only one file names its course (<b>VERIFIED</b>). Every other grouping below is provisional and marked <b>COURSE UNVERIFIED</b> until it is confirmed from course records.</div>
+    </div>
+  </section>
+
+  <section style="padding-top:20px">
+    <div class="wrap">
+      <h2>COURSE GALLERIES</h2>
+      <div id="course-tabs" class="chips" role="group" aria-label="Choose a course"></div>
+      <div id="gallery" style="margin-top:16px"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="panel">
+        <h2>SEARCHABLE CATALOGUE</h2>
+        <p class="muted" style="margin-top:-6px">Includes the 15 case studies and every reviewed file. Filter by course, software, skill or learning outcome.</p>
+        <div id="filters" class="filters">
+          <div class="search"><label for="f-q">SEARCH</label><input id="f-q" type="search" placeholder="e.g. lighting, HUD, ferris, Unreal"></div>
+          <div><label for="f-course">COURSE</label><select id="f-course"></select></div>
+          <div><label for="f-soft">SOFTWARE</label><select id="f-soft"></select></div>
+          <div><label for="f-skill">SKILL</label><select id="f-skill"></select></div>
+          <div><label for="f-out">LEARNING OUTCOME</label><select id="f-out"></select></div>
+        </div>
+        <p style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin:16px 0 0">
+          <span id="cat-count" class="count" aria-live="polite"></span><button id="f-reset" class="btn ghost" style="padding:8px 12px;font-size:11px">RESET FILTERS</button></p>
+        <p class="small muted">Learning-outcome categories group the course focus areas (Analyze, Build, Iterate, Create, Reflect). They are this portfolio's grouping, not official SLO wording.</p>
+      </div>
+      <h3 style="margin-top:30px">CASE STUDIES</h3>
+      <div id="cat-cases" class="grid g3"></div>
+      <h3 style="margin-top:34px">ALL CATALOGUED FILES</h3>
+      <p class="small muted">Descriptions only. File IDs match the private evidence inventory. Video entries were judged from Drive's preview frame and title, and are labelled that way in the <a href="ethics.html#coverage">coverage report</a>.</p>
+      <div id="cat-files" class="cat"></div>
+    </div>
+  </section>
+</main>
+
+<dialog id="case" aria-label="Case study"></dialog>
+<footer id="foot"></footer>
+<script src="assets/projects.js"></script>
+<script src="assets/coverage.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

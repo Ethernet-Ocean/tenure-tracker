@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Professor Ocean: Tenure Quest</title>
+<meta name="description" content="Tenure portfolio for a Digital Media Arts faculty member at Long Beach City College, styled after the instructor's game High Rollers.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="home">
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="stars" aria-hidden="true"></canvas>
+<header id="bar" class="bar"></header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <div class="console">
+        <div class="screen-top">
+          <span class="balloon b1"></span><span class="balloon b2"></span><span class="balloon b3"></span><span class="balloon b4"></span>
+          <p class="sub">Oceano J. Marshall · Assistant Professor, Game Design · LBCC</p>
+          <h1>PROFESSOR OCEAN:<br>TENURE QUEST</h1>
+          <p class="sub" style="color:var(--yellow)">Teaching. Creating. Innovating. Building Opportunities.</p><p class="sub" style="font-size:12px">Year One — Fall 2026</p>
+          <p class="press" aria-hidden="true">▶ PRESS START</p>
+        </div>
+        <div class="hinge" aria-hidden="true"></div>
+        <nav class="screen-bot" aria-label="Stage select">
+          <p class="sub" style="text-align:center;margin:0 0 12px">— STAGE SELECT —</p>
+          <div class="menu">
+            <a href="creations.html"><span class="k">STAGE 1</span>STUDENT CREATIONS</a>
+            <a href="evidence.html"><span class="k">STAGE 2</span>TEACHING EVIDENCE</a>
+            <a href="ethics.html"><span class="k">STAGE 3</span>ETHICS &amp; CONSENT</a>
+            <a href="#more" class="soon"><span class="k">STAGE 4–6</span>MORE COMING SOON</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="sub">Featured</p>
+      <h2>STUDENT CREATIONS — LEARNING IN ACTION</h2>
+      <p class="lede">Selected work from DMA 10, DMA 15 and DMA 40 in Fall 2026. Every featured piece was reviewed by content, matched to a learning objective, and written up as a case study. Students are credited anonymously. Their images and video are held back until each student signs a release.</p>
+      <div id="stats" class="stats" style="margin:22px 0 30px"></div>
+      <div id="featured" class="grid g3"></div>
+      <p style="margin-top:30px"><a class="btn" href="creations.html">▶ SEE ALL CREATIONS &amp; CATALOGUE</a></p>
+    </div>
+  </section>
+
+  <section id="more">
+    <div class="wrap">
+      <div class="grid g2">
+        <div class="panel">
+          <p class="sub">How to read this portfolio</p>
+          <h3>EVIDENCE, NOT CLAIMS</h3>
+          <p>Each project shows its evidence and how far that evidence goes. A course is marked <b>verified</b> only when the student's own file names it. Otherwise it is marked <b>inferred</b>. Skills the evidence can't confirm are listed as <b>assumed</b>. Links to teaching-evaluation themes appear only when an artifact supports them. One student's project never stands in for a whole course.</p>
+        </div>
+        <div class="panel pink">
+          <p class="sub">Coming soon</p>
+          <h3>MORE STAGES</h3>
+          <p>Teaching philosophy, course design, professional development and service sections will be added here. This first release covers the student-work showcase and how its evidence was handled.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<dialog id="case" aria-label="Case study"></dialog>
+<footer id="foot"></footer>
+<script src="assets/projects.js"></script>
+<script src="assets/coverage.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ethics &amp; Consent · Professor Ocean: Tenure Quest</title>
+<meta name="description" content="How student work was reviewed, anonymized and held for consent, with the full coverage report and publication checklist.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="ethics">
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="stars" aria-hidden="true"></canvas>
+<header id="bar" class="bar"></header>
+
+<main id="main">
+  <section style="padding-bottom:16px">
+    <div class="wrap">
+      <p class="sub">Stage 3</p>
+      <h1 style="font-size:clamp(26px,4.6vw,48px)">ETHICS &amp; CONSENT</h1>
+      <p class="lede">Having access to student files is not permission to publish them. This showcase follows four rules:</p>
+      <div class="grid g2" style="margin-top:18px">
+        <div class="panel"><h3>1 · ANONYMOUS BY DEFAULT</h3><p>Students appear as "Student A", "Student B" and so on. Names, usernames, initials and gamertags that appear in filenames or on screen are left off this site.</p></div>
+        <div class="panel"><h3>2 · NO MEDIA WITHOUT A RELEASE</h3><p>No student image, video or document is published. Each case study uses an original illustration until the student signs a media release and chooses how to be credited.</p></div>
+        <div class="panel"><h3>3 · NO RECORDS</h3><p>Grades, rubric scores and instructor annotations (including the annotated PDF exports) are left out. The site notes only that feedback was given.</p></div>
+        <div class="panel"><h3>4 · HONEST SCOPE</h3><p>Every file's review depth is recorded below. Course assignments that weren't stated in the work are marked inferred. Unconfirmed links to evaluation themes are flagged, not claimed.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>PUBLICATION CHECKLIST</h2>
+      <p class="muted">Before any project's media goes live:</p>
+      <div class="panel" style="margin-bottom:24px"><ul class="check">
+        <li>Confirm the course and assignment for each project marked <b>COURSE UNVERIFIED</b>.</li>
+        <li>Get a signed media release from the student (district/college form). For a student under 18, a parent or guardian signs.</li>
+        <li>Ask how the student wants to be credited: anonymous, initials, or full name.</li>
+        <li>Blur on-screen usernames, gamertags and chat windows. Strip names from filenames and metadata.</li>
+        <li>Confirm that growth sequences (Before → Final) come from a single student before presenting them as one student's growth.</li>
+        <li>Keep instructor annotations, grades and rubric scores off the site.</li>
+        <li>Host approved media in the site repo (not as Drive links, which expose filenames and owners).</li>
+        <li>Record the release date and scope in the private evidence log. Remove media promptly if a student withdraws consent.</li>
+      </ul></div>
+
+      <h2>AWAITING ATTRIBUTION OR PERMISSION</h2>
+      <p class="muted">All 15 featured projects are waiting for a release. None has one on file yet.</p>
+      <div class="tbl-wrap"><table>
+        <thead><tr><th>PROJECT</th><th>COURSE</th><th>EVIDENCE IDS</th><th>STATUS</th><th>ACTIONS NEEDED</th></tr></thead>
+        <tbody id="perm"></tbody>
+      </table></div>
+    </div>
+  </section>
+
+  <section id="coverage">
+    <div class="wrap">
+      <h2>COVERAGE REPORT</h2>
+      <p class="muted">Every file in the Student Work folder (Weeks 1–3, 4–6 and 7–9; 85 files, reviewed Nov 16, 2026). Filenames are omitted because some contain student names.</p>
+      <div id="cov-sum" class="stats" style="margin:16px 0"></div>
+      <div class="callout gold" style="margin-bottom:16px"><b>Review depth.</b> Documents and images were read in full. Drive doesn't play video for viewers who aren't signed in, so videos were judged from Drive's preview frame plus the file title. Their descriptions are limited to what that frame shows. Four files are deferred until they can be reviewed in full.</div>
+      <p style="display:flex;gap:12px;align-items:end;flex-wrap:wrap" class="filters">
+        <span><label for="cov-f">SHOW</label><select id="cov-f"><option value="">All statuses</option><option value="featured">Featured</option><option value="reviewed">Reviewed</option><option value="deferred">Deferred</option><option value="excluded">Excluded</option></select></span>
+        <span id="cov-count" class="count" aria-live="polite"></span></p>
+      <div class="tbl-wrap" style="max-height:70vh"><table>
+        <thead><tr><th>ID</th><th>TYPE</th><th>CONTENT</th><th>COURSE</th><th>STATUS</th><th>REASON</th><th>DEPTH</th></tr></thead>
+        <tbody id="cov"></tbody>
+      </table></div>
+    </div>
+  </section>
+</main>
+
+<footer id="foot"></footer>
+<script src="assets/projects.js"></script>
+<script src="assets/coverage.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
