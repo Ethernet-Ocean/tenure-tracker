@@ -7,7 +7,7 @@ window.COVERAGE = [
   "content": "Substance Painter workspace: two textured bed models (wood bed and rust-red bed) with material library open.",
   "project": "bed",
   "course": "DMA 40",
-  "software": "Substance 3D Painter",
+  "software": "Substance 3D Painter (interface visible)",
   "status": "reviewed",
   "reason": "Process evidence for the bed texturing assignment; catalogued.",
   "privacyFlag": false
@@ -16,24 +16,24 @@ window.COVERAGE = [
   "id": "W1-02",
   "kind": "video",
   "depth": "FRAME",
-  "content": "Rendered ocean surface at dusk with volumetric haze.",
+  "content": "Rendered ocean surface at dusk with haze.",
   "project": "ocean",
   "course": "DMA 40",
-  "software": "Blender",
+  "software": "Not Verified (render only)",
   "status": "reviewed",
-  "reason": "Ocean simulation render; catalogued in the ocean set.",
+  "reason": "Ocean render; catalogued.",
   "privacyFlag": false
  },
  {
   "id": "W1-03",
   "kind": "video",
   "depth": "FRAME",
-  "content": "Render of a pink fur/hair-particle plane on grey background.",
+  "content": "Render of a pink, fur-like surface on a plane against a grey background.",
   "project": "fur",
   "course": "DMA 40",
-  "software": "Blender",
+  "software": "Not Verified (render only)",
   "status": "reviewed",
-  "reason": "Particle-hair experiment; catalogued.",
+  "reason": "Catalogued.",
   "privacyFlag": false
  },
  {
@@ -43,9 +43,9 @@ window.COVERAGE = [
   "content": "Ocean render: blue swells with whitecap foam.",
   "project": "ocean",
   "course": "DMA 40",
-  "software": "Blender",
+  "software": "Not Verified (render only)",
   "status": "reviewed",
-  "reason": "Ocean simulation render; catalogued.",
+  "reason": "Ocean render; catalogued.",
   "privacyFlag": false
  },
  {
@@ -55,9 +55,9 @@ window.COVERAGE = [
   "content": "Ocean render in soft mist.",
   "project": "ocean",
   "course": "DMA 40",
-  "software": "Blender",
+  "software": "Not Verified (render only)",
   "status": "reviewed",
-  "reason": "Ocean simulation render; catalogued.",
+  "reason": "Ocean render; catalogued.",
   "privacyFlag": false
  },
  {
@@ -67,7 +67,7 @@ window.COVERAGE = [
   "content": "Starfield with a small yellow moon/planet.",
   "project": "planets",
   "course": "DMA 40",
-  "software": "Blender",
+  "software": "Not Verified (render only)",
   "status": "reviewed",
   "reason": "Space scene; catalogued in the planet set.",
   "privacyFlag": false
@@ -79,7 +79,7 @@ window.COVERAGE = [
   "content": "Stylized ocean with toon clouds and a glowing sun on the horizon.",
   "project": "ocean",
   "course": "DMA 40",
-  "software": "Blender",
+  "software": "Not Verified (render only)",
   "status": "reviewed",
   "reason": "Ocean render with stylized lighting; catalogued.",
   "privacyFlag": false
@@ -91,7 +91,7 @@ window.COVERAGE = [
   "content": "Roblox ferris wheel above clouds with health bar HUD.",
   "project": "ferris",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Roblox (interface visible)",
   "status": "excluded",
   "reason": "Appears to duplicate W1-09 (same timestamp name, '-1' copy, identical preview frame).",
   "privacyFlag": false
@@ -103,7 +103,7 @@ window.COVERAGE = [
   "content": "Roblox ferris wheel ride above a cloud layer, health bar HUD visible.",
   "project": "ferris",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Roblox (interface visible)",
   "status": "reviewed",
   "reason": "Ferris wheel assignment example; catalogued.",
   "privacyFlag": false
@@ -115,7 +115,7 @@ window.COVERAGE = [
   "content": "Archive containing a single 'IntroToUnity' folder; name matches a Unity Learn activity package.",
   "project": "-",
   "course": "-",
-  "software": "Unity",
+  "software": "Unity Learn package (archive name)",
   "status": "excluded",
   "reason": "Appears to be a Unity Learn tutorial package rather than student-authored work; authorship cannot be verified.",
   "privacyFlag": false
@@ -124,12 +124,12 @@ window.COVERAGE = [
   "id": "W1-11",
   "kind": "image",
   "depth": "IMG",
-  "content": "Render of a square patch of dense grass (particle hair) in a dark room.",
+  "content": "Render of a square patch of dense grass in a dark room.",
   "project": "grass",
   "course": "DMA 40",
-  "software": "Blender",
+  "software": "Not Verified (render only)",
   "status": "reviewed",
-  "reason": "Particle grass study; catalogued.",
+  "reason": "Catalogued.",
   "privacyFlag": true
  },
  {
@@ -139,9 +139,9 @@ window.COVERAGE = [
   "content": "Deep-blue animated ocean surface.",
   "project": "ocean",
   "course": "DMA 40",
-  "software": "Blender",
+  "software": "Not Verified (render only)",
   "status": "reviewed",
-  "reason": "Ocean simulation render; catalogued.",
+  "reason": "Ocean render; catalogued.",
   "privacyFlag": false
  },
  {
@@ -151,9 +151,9 @@ window.COVERAGE = [
   "content": "7-page UX/UI breakdown of a metroidvania (Pseudoregalia): player/goals/input/feedback/navigation table, title-screen flow, in-game menus, sub-menus, annotated screenshots.",
   "project": "ux-pseudoregalia",
   "course": "DMA 15",
-  "software": "Slides / PDF",
+  "software": "Not Verified (PDF export)",
   "status": "featured",
-  "reason": "Most thorough UX breakdown in the set; covers every part of the framework with annotated screens.",
+  "reason": "In a case study (read in full).",
   "privacyFlag": true
  },
  {
@@ -163,7 +163,7 @@ window.COVERAGE = [
   "content": "2-page interface-flow diagram of Sonic Frontiers (boot -> mode -> save -> level -> tutorial -> skill tree -> mini-boss) plus a one-sentence HUD reflection.",
   "project": "ux-sonic",
   "course": "DMA 15",
-  "software": "Slides / PDF",
+  "software": "Not Verified (PDF export)",
   "status": "reviewed",
   "reason": "Clear flow diagram; reflection is brief. Catalogued.",
   "privacyFlag": true
@@ -175,7 +175,7 @@ window.COVERAGE = [
   "content": "3-page Garry's Mod menu map and five-part UX analysis (user, goals, inputs, feedback, navigation).",
   "project": "ux-gmod",
   "course": "DMA 15",
-  "software": "Slides / PDF",
+  "software": "Not Verified (PDF export)",
   "status": "reviewed",
   "reason": "Solid menu map; catalogued as text description only.",
   "privacyFlag": true
@@ -187,7 +187,7 @@ window.COVERAGE = [
   "content": "One-page Animal Crossing: New Horizons UX analysis board with five-part framework and reflection.",
   "project": "ux-animalcrossing",
   "course": "DMA 15",
-  "software": "Slides / PDF",
+  "software": "Not Verified (PDF export)",
   "status": "reviewed",
   "reason": "Complete framework on one page; catalogued.",
   "privacyFlag": true
@@ -199,7 +199,7 @@ window.COVERAGE = [
   "content": "Substance Painter: bed covered in deliberately chaotic multicolour paint strokes; material ball preview.",
   "project": "bed",
   "course": "DMA 40",
-  "software": "Substance 3D Painter",
+  "software": "Substance 3D Painter (interface + .spp filename)",
   "status": "reviewed",
   "reason": "Playful texture-painting experiment; catalogued.",
   "privacyFlag": false
@@ -211,7 +211,7 @@ window.COVERAGE = [
   "content": "Teal-textured bed model composited onto a photo of dry ground.",
   "project": "bed",
   "course": "DMA 40",
-  "software": "Substance 3D Painter",
+  "software": "Not Verified (render only)",
   "status": "reviewed",
   "reason": "Photo-composite presentation; catalogued.",
   "privacyFlag": false
@@ -223,7 +223,7 @@ window.COVERAGE = [
   "content": "Archive of five images (1.png-5.png).",
   "project": "ux-pseudoregalia?",
   "course": "DMA 15",
-  "software": "-",
+  "software": "Not Verified",
   "status": "deferred",
   "reason": "Images not previewable inside the archive; title suggests source slides for W1-13 but this is unconfirmed. Needs instructor check.",
   "privacyFlag": false
@@ -235,9 +235,9 @@ window.COVERAGE = [
   "content": "Roblox Studio: in-game settings panel with music and SFX volume sliders, close button, gear icon and heart health bar.",
   "project": "roblox-gui",
   "course": "DMA 15",
-  "software": "Roblox Studio",
+  "software": "Roblox Studio (filename + interface)",
   "status": "featured",
-  "reason": "Working settings UI with clear iconography; directly targets GUI/UX outcomes.",
+  "reason": "In a case study (preview frame only).",
   "privacyFlag": false
  },
  {
@@ -247,7 +247,7 @@ window.COVERAGE = [
   "content": "Roblox ferris wheel in a city plaza, avatar in foreground.",
   "project": "ferris",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Not Verified (in-game view)",
   "status": "reviewed",
   "reason": "Ferris wheel assignment; catalogued.",
   "privacyFlag": false
@@ -259,7 +259,7 @@ window.COVERAGE = [
   "content": "Ferris wheel play-test with avatar and flying object.",
   "project": "ferris",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Roblox Studio (filename)",
   "status": "reviewed",
   "reason": "Ferris wheel assignment; catalogued.",
   "privacyFlag": false
@@ -271,9 +271,9 @@ window.COVERAGE = [
   "content": "Roblox Studio play-test of a ferris wheel with an on-screen Start/Stop control panel; Studio side panels open.",
   "project": "ferris",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Roblox Studio (interface visible)",
   "status": "featured",
-  "reason": "Titled by the student as a fixed motor version: explicit evidence of debugging and revision.",
+  "reason": "In a case study (preview frame only); filename describes a fixed version.",
   "privacyFlag": false
  },
  {
@@ -283,7 +283,7 @@ window.COVERAGE = [
   "content": "Untextured bed-frame model with bevelled posts (modeling stage).",
   "project": "bed",
   "course": "DMA 40",
-  "software": "Blender",
+  "software": "Not Verified (render only)",
   "status": "reviewed",
   "reason": "Modeling-stage evidence; catalogued.",
   "privacyFlag": false
@@ -295,9 +295,9 @@ window.COVERAGE = [
   "content": "Banded pink gas-giant planet against a purple nebula.",
   "project": "planets",
   "course": "DMA 40",
-  "software": "Blender",
+  "software": "Not Verified (render only)",
   "status": "featured",
-  "reason": "Strong procedural banding and atmospheric glow.",
+  "reason": "Finished render; in a case study.",
   "privacyFlag": false
  },
  {
@@ -307,7 +307,7 @@ window.COVERAGE = [
   "content": "Red bed with an organic, fleshy surface texture.",
   "project": "bed",
   "course": "DMA 40",
-  "software": "Substance 3D Painter",
+  "software": "Not Verified (render only)",
   "status": "reviewed",
   "reason": "Stylized texture experiment; catalogued.",
   "privacyFlag": false
@@ -319,9 +319,9 @@ window.COVERAGE = [
   "content": "Night ocean animation under stars and an aurora.",
   "project": "ocean",
   "course": "DMA 40",
-  "software": "Blender",
+  "software": "Not Verified (render only)",
   "status": "featured",
-  "reason": "Strongest lighting/mood in the ocean set.",
+  "reason": "In a case study (preview frame only).",
   "privacyFlag": false
  },
  {
@@ -331,9 +331,9 @@ window.COVERAGE = [
   "content": "Blender viewport: displaced ocean mesh plane, properties panel open.",
   "project": "ocean",
   "course": "DMA 40",
-  "software": "Blender",
+  "software": "Blender (filename)",
   "status": "reviewed",
-  "reason": "Process view of the ocean modifier; catalogued.",
+  "reason": "Ocean viewport recording; catalogued.",
   "privacyFlag": false
  },
  {
@@ -343,7 +343,7 @@ window.COVERAGE = [
   "content": "Viewport recording: dark planet in front of a star field.",
   "project": "planets",
   "course": "DMA 40",
-  "software": "Blender",
+  "software": "Not Verified",
   "status": "reviewed",
   "reason": "Planet process recording; catalogued.",
   "privacyFlag": false
@@ -355,7 +355,7 @@ window.COVERAGE = [
   "content": "Roblox Studio week-1 scene: avatar on a path with trees, chat window open.",
   "project": "roblox-basics",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Roblox Studio (interface visible)",
   "status": "reviewed",
   "reason": "Week-1 Studio basics; catalogued.",
   "privacyFlag": false
@@ -367,7 +367,7 @@ window.COVERAGE = [
   "content": "Roblox Studio editor view of a ferris wheel with properties panel.",
   "project": "ferris",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Roblox Studio (interface visible)",
   "status": "reviewed",
   "reason": "Ferris wheel assignment; catalogued.",
   "privacyFlag": false
@@ -379,7 +379,7 @@ window.COVERAGE = [
   "content": "Calm, deep-blue ocean render.",
   "project": "ocean",
   "course": "DMA 40",
-  "software": "Blender",
+  "software": "Not Verified (render only)",
   "status": "reviewed",
   "reason": "Ocean render; catalogued.",
   "privacyFlag": true
@@ -391,7 +391,7 @@ window.COVERAGE = [
   "content": "Blender viewport: small planet over a purple nebula background.",
   "project": "planets",
   "course": "DMA 40",
-  "software": "Blender",
+  "software": "Not Verified (3D editor interface)",
   "status": "reviewed",
   "reason": "Planet process recording; catalogued.",
   "privacyFlag": false
@@ -403,7 +403,7 @@ window.COVERAGE = [
   "content": "Roblox Studio: ferris wheel among city buildings, explorer panel open.",
   "project": "ferris",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Roblox Studio (interface visible)",
   "status": "reviewed",
   "reason": "Ferris wheel assignment; catalogued.",
   "privacyFlag": false
@@ -415,7 +415,7 @@ window.COVERAGE = [
   "content": "Roblox Studio terrain island in turquoise water.",
   "project": "roblox-terrain",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Roblox Studio (interface visible)",
   "status": "excluded",
   "reason": "Appears to duplicate W1-36 (same timestamp, '-1' copy, identical preview frame).",
   "privacyFlag": false
@@ -427,7 +427,7 @@ window.COVERAGE = [
   "content": "Roblox Studio terrain island with sculpted rock in turquoise water.",
   "project": "roblox-terrain",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Roblox Studio (interface visible)",
   "status": "reviewed",
   "reason": "Terrain editing; catalogued.",
   "privacyFlag": false
@@ -439,7 +439,7 @@ window.COVERAGE = [
   "content": "Editor viewport showing only a sky/cloud texture.",
   "project": "-",
   "course": "?",
-  "software": "?",
+  "software": "Not Verified",
   "status": "deferred",
   "reason": "Preview frame shows only a sky texture; subject and course cannot be determined without playback.",
   "privacyFlag": false
@@ -451,9 +451,9 @@ window.COVERAGE = [
   "content": "Whiteboard UX map of Taiko no Tatsujin: game overview, five-part framework cards, screen-flow (title -> mode -> song -> difficulty -> gameplay -> results), key takeaways, reflection and notes/improvements.",
   "project": "ux-taiko",
   "course": "DMA 15",
-  "software": "Online whiteboard",
+  "software": "Online whiteboard (app not identified)",
   "status": "featured",
-  "reason": "Only analysis that adds a 'Notes/Improvements' column with usability recommendations.",
+  "reason": "In a case study (viewed in full).",
   "privacyFlag": false
  },
  {
@@ -463,9 +463,9 @@ window.COVERAGE = [
   "content": "Substance Painter: pink bed in progress next to its red baked texture map.",
   "project": "bed",
   "course": "DMA 40",
-  "software": "Substance 3D Painter",
+  "software": "Substance 3D Painter (interface visible)",
   "status": "featured",
-  "reason": "Process stage of a before/after pair with W1-40 (13 minutes apart, same machine-style filename).",
+  "reason": "In a case study (possible two-stage pair, unconfirmed).",
   "privacyFlag": false
  },
  {
@@ -475,9 +475,9 @@ window.COVERAGE = [
   "content": "Final render: wooden bed with red blanket and white pillows on black background.",
   "project": "bed",
   "course": "DMA 40",
-  "software": "Substance 3D Painter",
+  "software": "Not Verified (render only)",
   "status": "featured",
-  "reason": "Final stage of the W1-39 -> W1-40 pair; clear material separation (wood, cloth).",
+  "reason": "In a case study (possible two-stage pair, unconfirmed).",
   "privacyFlag": false
  },
  {
@@ -487,9 +487,9 @@ window.COVERAGE = [
   "content": "Earth-like planet with cloud layer and atmosphere over a purple nebula.",
   "project": "planets",
   "course": "DMA 40",
-  "software": "Blender",
+  "software": "Not Verified (render only)",
   "status": "featured",
-  "reason": "Layered procedural surface, clouds and atmosphere rim.",
+  "reason": "Finished render; in a case study.",
   "privacyFlag": false
  },
  {
@@ -499,9 +499,9 @@ window.COVERAGE = [
   "content": "2-page Galaxian UX evaluation poster (user, goals, inputs, feedback, navigation/HUD) with a written UX/technical reflection.",
   "project": "ux-galaxian",
   "course": "DMA 15",
-  "software": "Slides / PDF",
+  "software": "Not Verified (PDF export)",
   "status": "featured",
-  "reason": "Polished arcade-styled poster and the most reflective write-up; reflection describes a change in how the student sees game UX.",
+  "reason": "In a case study (read in full).",
   "privacyFlag": false
  },
  {
@@ -511,7 +511,7 @@ window.COVERAGE = [
   "content": "Unreal level: desert canyon path framed by tall rock cliffs.",
   "project": "level-canyon",
   "course": "DMA 10",
-  "software": "Unreal Engine",
+  "software": "Not Verified (in-game view)",
   "status": "reviewed",
   "reason": "Level-design composition; catalogued. Filename confirms Fall 2026.",
   "privacyFlag": true
@@ -523,7 +523,7 @@ window.COVERAGE = [
   "content": "Roblox Studio; preview frame shows only the sky.",
   "project": "ball-physics",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Roblox Studio (interface visible)",
   "status": "deferred",
   "reason": "Title indicates a physics exercise but the preview frame shows no content; needs playback review.",
   "privacyFlag": false
@@ -535,7 +535,7 @@ window.COVERAGE = [
   "content": "Environment with tiled floor, domed structures and an over-exposed cloud sky.",
   "project": "env-domes",
   "course": "DMA 40",
-  "software": "Unreal Engine",
+  "software": "Not Verified",
   "status": "reviewed",
   "reason": "Environment design; catalogued.",
   "privacyFlag": false
@@ -547,7 +547,7 @@ window.COVERAGE = [
   "content": "Unreal landscape with lake, waterfall and dense foliage, editor open.",
   "project": "landscape",
   "course": "DMA 15",
-  "software": "Unreal Engine",
+  "software": "Unreal Engine (interface visible)",
   "status": "reviewed",
   "reason": "Strong landscape; catalogued.",
   "privacyFlag": false
@@ -559,7 +559,7 @@ window.COVERAGE = [
   "content": "Minecraft Education: stone-brick interior room with doorway.",
   "project": "minecraft",
   "course": "DMA 15",
-  "software": "Minecraft Education",
+  "software": "Minecraft Education (filename)",
   "status": "reviewed",
   "reason": "Spatial build; catalogued.",
   "privacyFlag": false
@@ -571,9 +571,9 @@ window.COVERAGE = [
   "content": "Unreal landscape: green hills with stylized trees.",
   "project": "landscape",
   "course": "DMA 15",
-  "software": "Unreal Engine",
+  "software": "Not Verified (in-game view)",
   "status": "reviewed",
-  "reason": "Week-7 landscape lab; catalogued.",
+  "reason": "Landscape recording; catalogued.",
   "privacyFlag": false
  },
  {
@@ -583,7 +583,7 @@ window.COVERAGE = [
   "content": "Roblox Studio: yellow platform course viewed from above and in play-test.",
   "project": "roblox-level",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Roblox Studio (interface visible)",
   "status": "reviewed",
   "reason": "Level blockout; catalogued.",
   "privacyFlag": false
@@ -595,7 +595,7 @@ window.COVERAGE = [
   "content": "Roblox Studio: grey wedge/terrain blockout.",
   "project": "roblox-level",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Roblox Studio (interface visible)",
   "status": "reviewed",
   "reason": "Level blockout; catalogued.",
   "privacyFlag": false
@@ -607,7 +607,7 @@ window.COVERAGE = [
   "content": "First-person corridor with ceiling lights and a goal light at the end.",
   "project": "level-corridor",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Not Verified",
   "status": "reviewed",
   "reason": "Guided-path level; catalogued.",
   "privacyFlag": false
@@ -619,7 +619,7 @@ window.COVERAGE = [
   "content": "Grey maze corridor with on-screen instruction text guiding the player.",
   "project": "level-corridor",
   "course": "DMA 15",
-  "software": "Roblox Studio",
+  "software": "Not Verified",
   "status": "reviewed",
   "reason": "In-world instructional UI; catalogued.",
   "privacyFlag": false
@@ -631,7 +631,7 @@ window.COVERAGE = [
   "content": "Roblox avatar beside a large red ramp with on-screen Start/Stop buttons.",
   "project": "roblox-physics",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Roblox Studio (interface visible)",
   "status": "reviewed",
   "reason": "Physics interaction with UI controls; catalogued.",
   "privacyFlag": false
@@ -643,9 +643,9 @@ window.COVERAGE = [
   "content": "Unreal: sunlit desert town with crane and low buildings.",
   "project": "landscape",
   "course": "DMA 15",
-  "software": "Unreal Engine",
+  "software": "Not Verified (in-game view)",
   "status": "reviewed",
-  "reason": "Week-7 landscape lab; catalogued.",
+  "reason": "Landscape recording; catalogued.",
   "privacyFlag": false
  },
  {
@@ -655,9 +655,9 @@ window.COVERAGE = [
   "content": "Unreal editor: grassy landscape with trees.",
   "project": "landscape",
   "course": "DMA 15",
-  "software": "Unreal Engine",
+  "software": "Unreal Engine (interface visible)",
   "status": "reviewed",
-  "reason": "Week-7 landscape lab; catalogued.",
+  "reason": "Landscape recording; catalogued.",
   "privacyFlag": false
  },
  {
@@ -667,9 +667,9 @@ window.COVERAGE = [
   "content": "Unreal: pink-red terrain with pine trees.",
   "project": "landscape",
   "course": "DMA 15",
-  "software": "Unreal Engine",
+  "software": "Unreal Engine (interface visible)",
   "status": "reviewed",
-  "reason": "Week-7 landscape lab; catalogued.",
+  "reason": "Landscape recording; catalogued.",
   "privacyFlag": false
  },
  {
@@ -679,9 +679,9 @@ window.COVERAGE = [
   "content": "Unreal: red desert canyon.",
   "project": "landscape",
   "course": "DMA 15",
-  "software": "Unreal Engine",
+  "software": "Unreal Engine (interface visible)",
   "status": "reviewed",
-  "reason": "Week-7 landscape lab; catalogued.",
+  "reason": "Landscape recording; catalogued.",
   "privacyFlag": false
  },
  {
@@ -691,7 +691,7 @@ window.COVERAGE = [
   "content": "Roblox Studio: ferris wheel with avatar on a bench.",
   "project": "ferris",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Roblox Studio (interface visible)",
   "status": "reviewed",
   "reason": "Later ferris wheel submission; catalogued.",
   "privacyFlag": false
@@ -703,9 +703,9 @@ window.COVERAGE = [
   "content": "Unreal: green valley with mountains and clouds.",
   "project": "landscape",
   "course": "DMA 15",
-  "software": "Unreal Engine",
+  "software": "Unreal Engine (filename)",
   "status": "reviewed",
-  "reason": "Week-7 landscape lab; catalogued.",
+  "reason": "Landscape recording; catalogued.",
   "privacyFlag": false
  },
  {
@@ -715,9 +715,9 @@ window.COVERAGE = [
   "content": "Unreal: sand plateau terrain, editor open.",
   "project": "landscape",
   "course": "DMA 15",
-  "software": "Unreal Engine",
+  "software": "Unreal Engine (interface visible)",
   "status": "reviewed",
-  "reason": "Week-7 landscape lab; catalogued.",
+  "reason": "Landscape recording; catalogued.",
   "privacyFlag": false
  },
  {
@@ -727,9 +727,9 @@ window.COVERAGE = [
   "content": "Unreal: sunlit sand dunes.",
   "project": "landscape",
   "course": "DMA 15",
-  "software": "Unreal Engine",
+  "software": "Not Verified (in-game view)",
   "status": "reviewed",
-  "reason": "Week-7 landscape lab; catalogued.",
+  "reason": "Landscape recording; catalogued.",
   "privacyFlag": false
  },
  {
@@ -739,19 +739,19 @@ window.COVERAGE = [
   "content": "Unreal: pink sea with green islands and a tall spire.",
   "project": "landscape",
   "course": "DMA 15 (verified by filename)",
-  "software": "Unreal Engine",
+  "software": "Unreal Engine (filename)",
   "status": "featured",
-  "reason": "Only file whose filename states the course; anchors the Week-7 landscape lab to DMA 15.",
+  "reason": "Only file whose filename states the course (DMA 15). In a case study.",
   "privacyFlag": false
  },
  {
   "id": "W7-01",
   "kind": "video",
   "depth": "FRAME",
-  "content": "Short render: black ball over white platform shapes.",
+  "content": "Short rendered video: black ball over white platform shapes.",
   "project": "bounce",
   "course": "DMA 40",
-  "software": "Blender (Grease Pencil)",
+  "software": "Not Verified (render only)",
   "status": "reviewed",
   "reason": "Render output of the bouncing-ball animation; grouped with W7-20.",
   "privacyFlag": false
@@ -763,7 +763,7 @@ window.COVERAGE = [
   "content": "Short render: outlined ball on the same platform layout.",
   "project": "bounce",
   "course": "DMA 40",
-  "software": "Blender (Grease Pencil)",
+  "software": "Not Verified (render only)",
   "status": "reviewed",
   "reason": "Second render pass; grouped with W7-20.",
   "privacyFlag": false
@@ -775,7 +775,7 @@ window.COVERAGE = [
   "content": "Roblox obby with aurora sky, character on ice, UI panel.",
   "project": "obby",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Not Verified (in-game view)",
   "status": "reviewed",
   "reason": "Obstacle course; catalogued.",
   "privacyFlag": false
@@ -787,7 +787,7 @@ window.COVERAGE = [
   "content": "Unreal editor: dark obstacle course level.",
   "project": "obby",
   "course": "DMA 10",
-  "software": "Unreal Engine",
+  "software": "Unreal Engine (interface visible)",
   "status": "reviewed",
   "reason": "Obstacle course; catalogued.",
   "privacyFlag": true
@@ -796,10 +796,10 @@ window.COVERAGE = [
   "id": "W7-05",
   "kind": "video",
   "depth": "FRAME",
-  "content": "Unreal editor: third-person level with HUD widget work (health and energy bars per title).",
+  "content": "Unreal editor view of a level; title says 'health and energy bar' (bars not visible in preview frame).",
   "project": "hud",
   "course": "DMA 15",
-  "software": "Unreal Engine",
+  "software": "Unreal Engine (interface visible)",
   "status": "reviewed",
   "reason": "HUD implementation; catalogued.",
   "privacyFlag": false
@@ -811,9 +811,9 @@ window.COVERAGE = [
   "content": "Roblox space scene: avatar on a starburst platform, UI panel top-right.",
   "project": "midterm-ui",
   "course": "DMA 15",
-  "software": "Roblox Studio",
+  "software": "Not Verified (in-game view)",
   "status": "featured",
-  "reason": "Midterm UI prototype; directly tied to an assessed UX outcome by its title.",
+  "reason": "In a case study (preview frame only).",
   "privacyFlag": false
  },
  {
@@ -823,7 +823,7 @@ window.COVERAGE = [
   "content": "Red-orange custom block texture on a cube.",
   "project": "minecraft",
   "course": "DMA 40",
-  "software": "Minecraft / image editor",
+  "software": "Not Verified",
   "status": "reviewed",
   "reason": "Texture creation; catalogued.",
   "privacyFlag": false
@@ -835,9 +835,9 @@ window.COVERAGE = [
   "content": "Unreal: moonlit snow field with pine silhouettes and mountains.",
   "project": "snow",
   "course": "DMA 40",
-  "software": "Unreal Engine",
+  "software": "Unreal Engine (filename)",
   "status": "featured",
-  "reason": "'2.0' in title signals a revised version; strong night lighting and atmosphere.",
+  "reason": "In a case study (preview frame only).",
   "privacyFlag": false
  },
  {
@@ -847,7 +847,7 @@ window.COVERAGE = [
   "content": "Unreal: forest edge around a red-dirt clearing.",
   "project": "landscape-b",
   "course": "DMA 40",
-  "software": "Unreal Engine",
+  "software": "Not Verified",
   "status": "reviewed",
   "reason": "Environment; catalogued.",
   "privacyFlag": false
@@ -859,7 +859,7 @@ window.COVERAGE = [
   "content": "Unreal: golden wheat field with domed buildings at sunset.",
   "project": "wheat",
   "course": "DMA 40",
-  "software": "Unreal Engine",
+  "software": "Not Verified (in-game view)",
   "status": "reviewed",
   "reason": "Strong environment lighting; catalogued.",
   "privacyFlag": true
@@ -871,7 +871,7 @@ window.COVERAGE = [
   "content": "Unity editor: runway/road receding toward a black-and-white cloud skybox.",
   "project": "unity-runway",
   "course": "DMA 10",
-  "software": "Unity",
+  "software": "Unity (interface visible)",
   "status": "reviewed",
   "reason": "Unity scene setup; catalogued.",
   "privacyFlag": false
@@ -883,9 +883,9 @@ window.COVERAGE = [
   "content": "Browser-based 2D catch game: player sprite on magenta ground, falling items, SCORE counter.",
   "project": "catch",
   "course": "DMA 10",
-  "software": "Browser code editor (unidentified)",
+  "software": "Web browser (app not identified)",
   "status": "featured",
-  "reason": "First of a dated iteration sequence (Oct 13 -> Oct 15 -> final GIFs).",
+  "reason": "In a case study (possible sequence, unconfirmed).",
   "privacyFlag": false
  },
  {
@@ -895,19 +895,19 @@ window.COVERAGE = [
   "content": "Catch game, later the same day: green ground, heart pickup, score shown.",
   "project": "catch",
   "course": "DMA 10",
-  "software": "Browser code editor (unidentified)",
+  "software": "Web browser (app not identified)",
   "status": "featured",
-  "reason": "Second iteration (51 minutes later).",
+  "reason": "In a case study (possible sequence, unconfirmed).",
   "privacyFlag": false
  },
  {
   "id": "W7-14",
   "kind": "video",
   "depth": "FRAME",
-  "content": "Field of glowing particles drifting over terrain.",
+  "content": "Field of glowing particles over terrain.",
   "project": "particles",
   "course": "DMA 40",
-  "software": "Unreal Engine (Niagara likely)",
+  "software": "Not Verified",
   "status": "reviewed",
   "reason": "VFX study; catalogued.",
   "privacyFlag": false
@@ -919,7 +919,7 @@ window.COVERAGE = [
   "content": "Blender viewport: blue scene with a small sphere.",
   "project": "-",
   "course": "?",
-  "software": "Blender",
+  "software": "Not Verified (3D editor interface)",
   "status": "deferred",
   "reason": "Preview frame too sparse to determine subject; needs playback.",
   "privacyFlag": false
@@ -931,9 +931,9 @@ window.COVERAGE = [
   "content": "Catch game variant on grey field with several falling sprites and score.",
   "project": "catch",
   "course": "DMA 10",
-  "software": "Browser code editor (unidentified)",
+  "software": "Web browser (app not identified)",
   "status": "featured",
-  "reason": "Third iteration (Oct 15).",
+  "reason": "In a case study (possible sequence, unconfirmed).",
   "privacyFlag": false
  },
  {
@@ -943,7 +943,7 @@ window.COVERAGE = [
   "content": "Unreal editor: snowy rocky terrain.",
   "project": "snow-b",
   "course": "DMA 40",
-  "software": "Unreal Engine",
+  "software": "Unreal Engine (interface visible)",
   "status": "reviewed",
   "reason": "Snow environment; may relate to W7-08 but authorship link unverified.",
   "privacyFlag": false
@@ -955,7 +955,7 @@ window.COVERAGE = [
   "content": "Orange and yellow block platforms over water.",
   "project": "platforms",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Not Verified",
   "status": "reviewed",
   "reason": "Platforming layout; catalogued.",
   "privacyFlag": false
@@ -967,9 +967,9 @@ window.COVERAGE = [
   "content": "Roblox 'Twilight Obby': welcome GUI banner, avatar in a dusk forest path.",
   "project": "obby",
   "course": "DMA 10",
-  "software": "Roblox Studio",
+  "software": "Roblox (interface visible)",
   "status": "featured",
-  "reason": "Complete onboarding moment (welcome UI) + themed lighting in a playable obby.",
+  "reason": "In a case study (preview frame only).",
   "privacyFlag": true
  },
  {
@@ -979,9 +979,9 @@ window.COVERAGE = [
   "content": "Blender Grease Pencil: bouncing ball over a U-shaped track, keyframes on timeline.",
   "project": "bounce",
   "course": "DMA 40",
-  "software": "Blender (Grease Pencil)",
+  "software": "Blender Grease Pencil (interface visible)",
   "status": "featured",
-  "reason": "Classic animation-principles exercise with renders (W7-01, W7-02) as outputs.",
+  "reason": "In a case study (preview frame only).",
   "privacyFlag": false
  },
  {
@@ -991,9 +991,9 @@ window.COVERAGE = [
   "content": "Neon marble-run machine: emissive funnels, spiral track, spinning wheel, bloom lighting.",
   "project": "marble",
   "course": "DMA 40",
-  "software": "3D (engine not identifiable from frame)",
+  "software": "Not Verified",
   "status": "featured",
-  "reason": "Most ambitious lighting/material piece in the folder.",
+  "reason": "In a case study (preview frame only).",
   "privacyFlag": false
  },
  {
@@ -1003,9 +1003,9 @@ window.COVERAGE = [
   "content": "Catch game GIF: SCORE= 32, multiple falling items, green ground.",
   "project": "catch",
   "course": "DMA 10",
-  "software": "Browser code editor (unidentified)",
+  "software": "Not Verified (GIF)",
   "status": "featured",
-  "reason": "Final state of the catch-game sequence.",
+  "reason": "In a case study (GIF viewed).",
   "privacyFlag": false
  },
  {
@@ -1015,9 +1015,9 @@ window.COVERAGE = [
   "content": "Catch game GIF (second capture).",
   "project": "catch",
   "course": "DMA 10",
-  "software": "Browser code editor (unidentified)",
+  "software": "Not Verified (GIF)",
   "status": "featured",
-  "reason": "Final state of the catch-game sequence.",
+  "reason": "In a case study (GIF viewed).",
   "privacyFlag": false
  }
 ];

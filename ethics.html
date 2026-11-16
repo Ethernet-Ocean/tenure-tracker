@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ethics &amp; Consent · Professor Ocean: Tenure Quest</title>
+<title>Evidence Vault · Professor Ocean: Tenure Quest</title>
 <meta name="description" content="How student work was reviewed, anonymized and held for consent, with the full coverage report and publication checklist.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=3">
+<link rel="stylesheet" href="assets/style.css?v=4">
 </head>
 <body data-page="ethics">
 <a class="skip" href="#main">Skip to content</a>
@@ -17,14 +17,14 @@
 <main id="main">
   <section style="padding-bottom:16px">
     <div class="wrap">
-      <p class="sub">Stage 3</p>
-      <h1 style="font-size:clamp(26px,4.6vw,48px)">ETHICS &amp; CONSENT</h1>
+      <p class="sub">Sources, permissions, coverage</p>
+      <h1 style="font-size:clamp(26px,4.6vw,48px)">EVIDENCE VAULT</h1>
       <p class="lede">Having access to student files is not permission to publish them. This showcase follows four rules:</p>
       <div class="grid g2" style="margin-top:18px">
         <div class="panel"><h3>1 · ANONYMOUS BY DEFAULT</h3><p>Students appear as "Student A", "Student B" and so on. Names, usernames, initials and gamertags that appear in filenames or on screen are left off this site.</p></div>
-        <div class="panel"><h3>2 · NO MEDIA WITHOUT A RELEASE</h3><p>No student image, video or document is published. Each case study uses an original illustration until the student signs a media release and chooses how to be credited.</p></div>
+        <div class="panel"><h3>2 · NO MEDIA WITHOUT A RELEASE</h3><p>No student image, video or document is published. Each case study shows a locked evidence panel, not a picture, until the student signs a media release and chooses how to be credited. No generated or illustrative art stands in for student work.</p></div>
         <div class="panel"><h3>3 · NO RECORDS</h3><p>Grades, rubric scores and instructor annotations (including the annotated PDF exports) are left out. The site notes only that feedback was given.</p></div>
-        <div class="panel"><h3>4 · HONEST SCOPE</h3><p>Every file's review depth is recorded below. Course assignments that weren't stated in the work are marked inferred. Unconfirmed links to evaluation themes are flagged, not claimed.</p></div>
+        <div class="panel"><h3>4 · HONEST SCOPE</h3><p>Every file's review depth is recorded below. Courses, assignment goals and software not shown by the evidence are marked Not Verified. Survey percentages always show their respondent counts.</p></div>
       </div>
     </div>
   </section>
@@ -53,6 +53,17 @@
     </div>
   </section>
 
+  <section id="register">
+    <div class="wrap">
+      <h2>EVIDENCE REGISTER</h2>
+      <p class="muted">Every kind of claim made on this site, with its source, location, verification status, confidentiality and placement.</p>
+      <div class="tbl-wrap" style="max-height:70vh"><table>
+        <thead><tr><th>CLAIM</th><th>CATEGORY</th><th>SOURCE</th><th>LOCATION</th><th>COURSE / DATE</th><th>TYPE</th><th>VERIFICATION</th><th>CONFIDENTIALITY</th><th>PERMISSION</th><th>ON SITE</th></tr></thead>
+        <tbody id="reg"></tbody>
+      </table></div>
+    </div>
+  </section>
+
   <section id="coverage">
     <div class="wrap">
       <h2>COVERAGE REPORT</h2>
@@ -63,7 +74,7 @@
         <span><label for="cov-f">SHOW</label><select id="cov-f"><option value="">All statuses</option><option value="featured">Featured</option><option value="reviewed">Reviewed</option><option value="deferred">Deferred</option><option value="excluded">Excluded</option></select></span>
         <span id="cov-count" class="count" aria-live="polite"></span></p>
       <div class="tbl-wrap" style="max-height:70vh"><table>
-        <thead><tr><th>ID</th><th>TYPE</th><th>CONTENT</th><th>COURSE</th><th>STATUS</th><th>REASON</th><th>DEPTH</th></tr></thead>
+        <thead><tr><th>ID</th><th>TYPE</th><th>CONTENT</th><th>SOFTWARE (BASIS)</th><th>STATUS</th><th>REASON</th><th>DEPTH</th></tr></thead>
         <tbody id="cov"></tbody>
       </table></div>
     </div>
@@ -71,8 +82,10 @@
 </main>
 
 <footer id="foot"></footer>
-<script src="assets/projects.js?v=3"></script>
-<script src="assets/coverage.js?v=3"></script>
-<script src="assets/app.js?v=3"></script>
+<script src="assets/projects.js?v=4"></script>
+<script src="assets/coverage.js?v=4"></script>
+<script src="assets/evaluations.js?v=4"></script>
+<script src="assets/feedback.js?v=4"></script>
+<script src="assets/app.js?v=4"></script>
 </body>
 </html>
