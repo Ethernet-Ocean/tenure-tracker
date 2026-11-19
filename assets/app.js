@@ -11,17 +11,14 @@
   const EV = window.EVALS || [], Q = window.EVAL_QUESTIONS || [], FB = window.FEEDBACK || [], OBS = window.OBSERVATIONS || [];
 
   /* ---------- chrome ---------- */
-  // Four top-level sections (evaluator request) + a plain "jump to" row for every required item.
+  // The site covers Appendix E-3 and E-4 only.
   const NAV = [
-    ["index.html", "START HERE", ["home"]],
-    ["e3.html", "E-3 STUDENT EVALUATIONS", ["e3", "voices", "feedback"]],
-    ["e4.html", "E-4 SELF-EVALUATION", ["e4", "observations", "dma10", "creations", "evidence", "e5"]],
-    ["ethics.html", "EVIDENCE INDEX", ["ethics"]]
+    ["e3.html", "E-3 STUDENT EVALUATIONS", ["e3"]],
+    ["e4.html", "E-4 SELF-EVALUATION", ["e4"]]
   ];
   const JUMP = [
     ["E-3 Q1", "e3.html#q1"], ["E-3 Q2", "e3.html#q2"], ["E-3 Q3", "e3.html#q3"],
-    ["E-4 1(a–h)", "e4.html#q1"], ["E-4 Q2 Service", "e4.html#q2"], ["E-4 Q3 Equitable teaching", "e4.html#q3"], ["E-4 Q4 DEIA", "e4.html#q4"],
-    ["E-5 Crosswalk", "e5.html"], ["Observations", "observations.html"], ["DMA 10 case study", "dma10.html"], ["UDL", "e4.html#udl"], ["Student work", "creations.html"]
+    ["E-4 Q1 (a–h)", "e4.html#q1"], ["E-4 Q2 Service", "e4.html#q2"], ["E-4 Q3 Equitable teaching", "e4.html#q3"], ["E-4 Q4 DEIA", "e4.html#q4"]
   ];
   const die = `<svg class="die" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="26" height="26" rx="7" fill="#F06B9B" stroke="#0d0f24" stroke-width="3"/><circle cx="11" cy="11" r="2.6" fill="#FAEF88"/><circle cx="21" cy="21" r="2.6" fill="#FAEF88"/><circle cx="16" cy="16" r="2.6" fill="#FAEF88"/></svg>`;
   const header = $("#bar");
@@ -32,7 +29,7 @@
   if (foot) foot.innerHTML = `<div class="wrap"><p class="px" style="color:var(--yellow);font-size:12px">PROFESSOR OCEAN: TENURE QUEST · VISUAL &amp; MEDIA ARTS · LONG BEACH CITY COLLEGE</p>
     <p>This site supplements the official LBCC evaluation process. It is not an official LBCC submission and does not replace any required signed form.
     Student evaluation figures and comments are transcribed from the Fall 2026 Individual Reports. The report PDFs themselves are not published.
-    Student work appears anonymously. No student images, video, names or grades are published until a release is on file (see the <a href="ethics.html">Evidence Index</a>).</p>
+    No student names, grades or work samples are published.</p>
     <p>Visual style adapted from the instructor's independently developed game <em>High Rollers</em>, including its RollerPixel typeface.</p></div>`;
 
   /* ---------- starfield (decorative) ---------- */
@@ -162,7 +159,7 @@
       <details style="margin-top:16px"><summary class="px">ALL 12 SURVEY ITEMS + OFFICE HOURS</summary>${evalTable(e)}
         <p><b>Office hours</b> (${esc(e.source)}, ${e.pages.office}): ${e.office.visited} of ${e.office.visited + e.office.notVisited} respondents said they had visited.
         ${e.office.available ? ` Of those ${e.office.visited}, ${e.office.available[0]} Strongly Agreed the instructor was available and ${e.office.helpful[0]} Strongly Agreed the time was helpful.` : ""}</p></details>
-      <p style="margin-top:14px"><a href="feedback.html">▶ See this course's suggestions for improvement and the instructor's response</a></p>
+      <p style="margin-top:14px"><a href="e3.html#verbatim">▶ Suggestions for improvement</a></p>
     </section>`).join("");
     $("#obs").innerHTML = OBS.map((o) => `<tr><td>${esc(o.evaluator)}</td><td>${esc(o.course)}</td><td>${esc(o.type)}</td><td><span class="st deferred">DOCUMENT NOT PROVIDED</span></td><td class="small">No rating, date or comment is shown until the official form is provided.</td></tr>`).join("");
   }

@@ -322,3 +322,7 @@ section[id], .panel[id], article[id] { scroll-margin-top: 130px; }
 @media (max-width: 860px) { .ev3 { grid-template-columns: 1fr; } .jump a { font-size: 13px; } }
 @media print { .jump { display: none !important; } .e4, .bigbtns a { box-shadow: none; } .ev3 > div { background: #fff; color: #000; } }
 @media (max-width: 760px) { .bar { position: static; } }
+.bigbtns.two { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.bigbtns.two a { padding: 24px; }
+.bigbtns.two .n { font-size: 34px; }
+.bigbtns.two b { font-size: 16px; }
