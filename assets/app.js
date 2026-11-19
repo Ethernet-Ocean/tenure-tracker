@@ -22,15 +22,14 @@
   ];
   const die = `<svg class="die" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="26" height="26" rx="7" fill="#F06B9B" stroke="#0d0f24" stroke-width="3"/><circle cx="11" cy="11" r="2.6" fill="#FAEF88"/><circle cx="21" cy="21" r="2.6" fill="#FAEF88"/><circle cx="16" cy="16" r="2.6" fill="#FAEF88"/></svg>`;
   const header = $("#bar");
-  if (header) header.innerHTML = `<div class="wrap"><a class="brand" href="index.html">${die}<span>PROFESSOR OCEAN: TENURE QUEST</span></a>
+  if (header) header.innerHTML = `<div class="wrap"><a class="brand" href="index.html">${die}<span>Oceano J. Marshall · Tenure Portfolio</span></a>
     <nav class="nav" aria-label="Main">${NAV.map(([h, t, ks]) => `<a href="${h}"${ks.includes(page) ? ' aria-current="page"' : ""}>${t}</a>`).join("")}</nav></div>
     <div class="jump"><div class="wrap"><span class="jl">JUMP TO:</span> ${JUMP.map(([t, h]) => `<a href="${h}">${t}</a>`).join("")}</div></div>`;
   const foot = $("#foot");
-  if (foot) foot.innerHTML = `<div class="wrap"><p class="px" style="color:var(--yellow);font-size:12px">PROFESSOR OCEAN: TENURE QUEST · VISUAL &amp; MEDIA ARTS · LONG BEACH CITY COLLEGE</p>
+  if (foot) foot.innerHTML = `<div class="wrap"><p class="px">Oceano J. Marshall · Tenure Portfolio · Visual &amp; Media Arts · Long Beach City College</p>
     <p>This site supplements the official LBCC evaluation process. It is not an official LBCC submission and does not replace any required signed form.
     Student evaluation figures and comments are transcribed from the Fall 2026 Individual Reports. The report PDFs themselves are not published.
-    No student names, grades or work samples are published.</p>
-    <p>Visual style adapted from the instructor's independently developed game <em>High Rollers</em>, including its RollerPixel typeface.</p></div>`;
+    No student names, grades or work samples are published.</p></div>`;
 
   /* ---------- starfield (decorative) ---------- */
   const cv = $("#stars");
@@ -77,7 +76,7 @@
         ${F("COURSE & SEMESTER", `<p>${p.courseStatus === "verified" ? esc(p.course) + ": " + esc(CRS[p.course].name) + " (named in the student's filename)" : "Course: Not Verified" + (p.course.startsWith("DMA") ? ` (provisionally grouped with ${esc(p.course)})` : "")}</p><p class="small muted">Semester: Fall 2026 (file dates Sep–Oct 2026) · ${esc(p.weeks)}</p>`)}
         ${F("FORMAT", `<p>${esc(p.format)}</p>`)}
         ${F("SOFTWARE", `<p>${esc(p.software)}</p>`)}
-        ${F("EVIDENCE SOURCE", `<ul>${p.evidence.map(([r, d]) => `<li><span class="px" style="font-size:10px;color:var(--pink)">${esc(r)}</span>: ${esc(d)}</li>`).join("")}</ul><p class="small muted">IDs refer to the private evidence inventory (course Drive, Student Work folder).</p>`)}
+        ${F("EVIDENCE SOURCE", `<ul>${p.evidence.map(([r, d]) => `<li><span class="px" >${esc(r)}</span>: ${esc(d)}</li>`).join("")}</ul><p class="small muted">IDs refer to the private evidence inventory (course Drive, Student Work folder).</p>`)}
       </div><div>
         ${F("ASSIGNMENT GOAL", `<p>${esc(p.assignmentGoal)}</p>`)}
         ${F("WHAT THE STUDENT CREATED", `<p>${esc(p.created)}</p>`)}
@@ -212,7 +211,7 @@
     const rows = () => {
       const f = $("#cov-f").value; const list = COV.filter((c) => !f || c.status === f);
       $("#cov-count").textContent = `${list.length} OF ${COV.length} FILES`;
-      $("#cov").innerHTML = list.map((c) => `<tr><td class="px" style="font-size:10px;color:var(--pink)">${esc(c.id)}</td><td>${esc(c.kind)}</td><td>${esc(c.content)}</td><td class="small">${esc(c.software)}</td><td><span class="st ${c.status}">${esc(c.status.toUpperCase())}</span></td><td class="small">${esc(c.reason)}${c.privacyFlag ? ' <span class="st deferred">PRIVACY FLAG</span>' : ""}</td><td class="small">${{ DOC: "Full document", IMG: "Full image", FRAME: "Preview frame only", LIST: "Archive listing" }[c.depth]}</td></tr>`).join("");
+      $("#cov").innerHTML = list.map((c) => `<tr><td class="px" >${esc(c.id)}</td><td>${esc(c.kind)}</td><td>${esc(c.content)}</td><td class="small">${esc(c.software)}</td><td><span class="st ${c.status}">${esc(c.status.toUpperCase())}</span></td><td class="small">${esc(c.reason)}${c.privacyFlag ? ' <span class="st deferred">PRIVACY FLAG</span>' : ""}</td><td class="small">${{ DOC: "Full document", IMG: "Full image", FRAME: "Preview frame only", LIST: "Archive listing" }[c.depth]}</td></tr>`).join("");
     };
     $("#cov-f").addEventListener("input", rows); rows();
     const cnt = (s) => COV.filter((c) => c.status === s).length;

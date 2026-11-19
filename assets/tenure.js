@@ -28,7 +28,7 @@
       <div class="grid g2" style="margin-top:14px">
         <div><h3>STRENGTHS (EVALUATOR'S OWN WORDS)</h3>${o.strengths.map((s) => `<figure class="quote" style="margin-bottom:8px"><blockquote>“${esc(s)}”</blockquote></figure>`).join("")}
           ${o.strengthsNote ? `<p class="small muted">${esc(o.strengthsNote)}</p>` : ""}
-          ${o.observedFacts.length ? `<h4 class="px" style="font-size:11px;color:var(--pink);margin-top:14px">WHAT THE EVALUATOR RECORDED (SUMMARY)</h4><ul>${o.observedFacts.map((s) => `<li>${esc(s)}</li>`).join("")}</ul>` : ""}</div>
+          ${o.observedFacts.length ? `<h4 class="px" style="margin-top:14px">WHAT THE EVALUATOR RECORDED (SUMMARY)</h4><ul>${o.observedFacts.map((s) => `<li>${esc(s)}</li>`).join("")}</ul>` : ""}</div>
         <div><h3>SUGGESTIONS FOR IMPROVEMENT</h3><ul>${o.suggestions.map((s) => `<li>${esc(s)}</li>`).join("")}</ul>
           ${o.suggestionsNote ? `<p class="small muted">${esc(o.suggestionsNote)}</p>` : ""}
           <p><a href="e3.html#q2">▶ Response: E-3 Q2 improvement matrix</a></p></div>
