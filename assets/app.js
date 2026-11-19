@@ -18,7 +18,7 @@
   ];
   const JUMP = [
     ["E-3 Q1", "e3.html#q1"], ["E-3 Q2", "e3.html#q2"], ["E-3 Q3", "e3.html#q3"],
-    ["E-4 Q1 (a–h)", "e4.html#q1"], ["E-4 Q2 Service", "e4.html#q2"], ["E-4 Q3 Equitable teaching", "e4.html#q3"], ["E-4 Q4 DEIA", "e4.html#q4"]
+    ["E-4 Q1 (a–h)", "e4.html#q1"], ["Credentials", "e4.html#credentials"], ["E-4 Q2 Service", "e4.html#q2"], ["E-4 Q3 Equitable teaching", "e4.html#q3"], ["E-4 Q4 DEIA", "e4.html#q4"]
   ];
   const die = `<svg class="die" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="26" height="26" rx="7" fill="#F06B9B" stroke="#0d0f24" stroke-width="3"/><circle cx="11" cy="11" r="2.6" fill="#FAEF88"/><circle cx="21" cy="21" r="2.6" fill="#FAEF88"/><circle cx="16" cy="16" r="2.6" fill="#FAEF88"/></svg>`;
   const header = $("#bar");
