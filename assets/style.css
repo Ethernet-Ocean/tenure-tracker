@@ -276,3 +276,49 @@ details > summary { cursor: pointer; color: var(--yellow); font-size: 12px; padd
 .nav a { font-size: 11px; padding: 8px 10px; }
 @media (max-width: 860px) { .fb-grid { grid-template-columns: 1fr; } }
 @media print { .locked { background: #eee; color: #000; } .quote { background: #fff; color: #000; } }
+
+/* ---------- evaluator-friendly navigation & evidence components (v6) ---------- */
+.nav a { font-size: 12px; padding: 10px 12px; }
+.jump { background: #10122b; border-top: 1px solid var(--navy-lift); }
+.jump .wrap { display: flex; flex-wrap: wrap; gap: 4px 6px; align-items: center; padding: 6px 0; }
+.jump .jl { font-family: var(--px); font-size: 10px; color: var(--pink); margin-right: 4px; }
+.jump a { font-size: 14px; color: var(--text); text-decoration: none; padding: 4px 8px; border-radius: 7px; border: 1px solid var(--navy-lift); }
+.jump a:hover, .jump a:focus-visible { background: var(--hot); color: #fff; border-color: var(--hot); }
+.crumb { font-size: 15px; color: var(--muted); margin: 0 0 8px; }
+.crumb a { color: var(--yellow); }
+.toc { display: grid; gap: 8px; margin-top: 14px; }
+.toc a { display: block; padding: 12px 14px; background: var(--navy); border: 3px solid var(--gold-dark); border-radius: 10px; color: var(--text); text-decoration: none; font-size: 17px; }
+.toc a:hover, .toc a:focus-visible { border-color: var(--hot); background: var(--navy-lift); }
+.legend { font-size: 16px; margin: 8px 0 4px; line-height: 2.1; }
+.ev-v, .ev-r, .ev-m { display: inline-block; font-family: var(--px); font-size: 10px; letter-spacing: .05em; padding: 3px 7px; border-radius: 6px; white-space: nowrap; }
+.ev-v { background: var(--mint); color: var(--navy-ink); }
+.ev-r { background: var(--yellow); color: var(--navy-ink); }
+.ev-m { background: #b8bccf; color: var(--navy-ink); }
+.ev3 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.ev3 > div { background: var(--navy-ink); border-radius: 12px; padding: 12px 14px; border-left: 6px solid; font-size: 16px; }
+.ev3 > div > b { font-family: var(--px); font-size: 11px; letter-spacing: .06em; }
+.ev3 .v { border-color: var(--mint); } .ev3 .v > b { color: var(--mint); }
+.ev3 .r { border-color: var(--yellow); } .ev3 .r > b { color: var(--yellow); }
+.ev3 .m { border-color: #b8bccf; } .ev3 .m > b { color: #d6d9e8; }
+.ev3 ul { margin: 6px 0 0; padding-left: 18px; }
+.ev3 li { margin-bottom: 6px; }
+.e4 { background: var(--navy); border: 4px solid var(--gold); border-radius: var(--r); box-shadow: 0 0 0 3px var(--navy-ink), 6px 7px 0 3px var(--navy-ink); padding: 18px 20px; margin-bottom: 24px; scroll-margin-top: 130px; }
+.e4 h3 { font-size: 17px; }
+.h4 { font-family: var(--px); font-size: 12px; color: var(--pink); letter-spacing: .07em; margin: 6px 0 8px; }
+section[id], .panel[id], article[id] { scroll-margin-top: 130px; }
+.rt { font-family: var(--px); font-size: 10px; padding: 3px 7px; border-radius: 6px; white-space: nowrap; }
+.rt.s { background: var(--mint); color: var(--navy-ink); } .rt.ni { background: var(--hot); color: #fff; } .rt.u { background: #7a1430; color: #fff; }
+.bigbtns { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+.bigbtns a { display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: var(--text); background: var(--navy); border: 4px solid var(--gold); border-radius: 16px; padding: 18px; box-shadow: 0 6px 0 var(--navy-ink); transition: transform .08s, border-color .12s; }
+.bigbtns a:hover, .bigbtns a:focus-visible { border-color: var(--hot); transform: translateY(-3px); }
+.bigbtns .n { font-family: var(--px); font-size: 26px; color: var(--yellow); }
+.bigbtns b { font-family: var(--px); font-size: 14px; letter-spacing: .05em; }
+.bigbtns span:last-child { font-size: 15px; color: var(--muted); }
+.steps9 { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+.steps9 .panel h3 { font-size: 15px; }
+.steps9 .panel p, .steps9 .panel li { font-size: 16px; }
+.xw .sec td { background: var(--navy-lift) !important; font-family: var(--px); font-size: 11px; color: var(--yellow); }
+.xw .focus td { background: rgba(240,107,155,.12) !important; }
+@media (max-width: 860px) { .ev3 { grid-template-columns: 1fr; } .jump a { font-size: 13px; } }
+@media print { .jump { display: none !important; } .e4, .bigbtns a { box-shadow: none; } .ev3 > div { background: #fff; color: #000; } }
+@media (max-width: 760px) { .bar { position: static; } }

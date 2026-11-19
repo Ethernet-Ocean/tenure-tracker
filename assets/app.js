@@ -11,24 +11,28 @@
   const EV = window.EVALS || [], Q = window.EVAL_QUESTIONS || [], FB = window.FEEDBACK || [], OBS = window.OBSERVATIONS || [];
 
   /* ---------- chrome ---------- */
+  // Four top-level sections (evaluator request) + a plain "jump to" row for every required item.
   const NAV = [
-    ["index.html", "HOME", "home"],
-    ["creations.html", "STUDENT CREATIONS", "creations"],
-    ["voices.html", "STUDENT VOICES", "voices"],
-    ["feedback.html", "FEEDBACK → ACTION", "feedback"],
-    ["evidence.html", "TEACHING EVIDENCE", "evidence"],
-    ["dma10.html", "DMA 10 AUDIT", "dma10"],
-    ["ethics.html", "EVIDENCE VAULT", "ethics"]
+    ["index.html", "START HERE", ["home"]],
+    ["e3.html", "E-3 STUDENT EVALUATIONS", ["e3", "voices", "feedback"]],
+    ["e4.html", "E-4 SELF-EVALUATION", ["e4", "observations", "dma10", "creations", "evidence", "e5"]],
+    ["ethics.html", "EVIDENCE INDEX", ["ethics"]]
+  ];
+  const JUMP = [
+    ["E-3 Q1", "e3.html#q1"], ["E-3 Q2", "e3.html#q2"], ["E-3 Q3", "e3.html#q3"],
+    ["E-4 1(a–h)", "e4.html#q1"], ["E-4 Q2 Service", "e4.html#q2"], ["E-4 Q3 Equitable teaching", "e4.html#q3"], ["E-4 Q4 DEIA", "e4.html#q4"],
+    ["E-5 Crosswalk", "e5.html"], ["Observations", "observations.html"], ["DMA 10 case study", "dma10.html"], ["UDL", "e4.html#udl"], ["Student work", "creations.html"]
   ];
   const die = `<svg class="die" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="26" height="26" rx="7" fill="#F06B9B" stroke="#0d0f24" stroke-width="3"/><circle cx="11" cy="11" r="2.6" fill="#FAEF88"/><circle cx="21" cy="21" r="2.6" fill="#FAEF88"/><circle cx="16" cy="16" r="2.6" fill="#FAEF88"/></svg>`;
   const header = $("#bar");
   if (header) header.innerHTML = `<div class="wrap"><a class="brand" href="index.html">${die}<span>PROFESSOR OCEAN: TENURE QUEST</span></a>
-    <nav class="nav" aria-label="Main">${NAV.map(([h, t, k]) => `<a href="${h}"${k === page ? ' aria-current="page"' : ""}>${t}</a>`).join("")}</nav></div>`;
+    <nav class="nav" aria-label="Main">${NAV.map(([h, t, ks]) => `<a href="${h}"${ks.includes(page) ? ' aria-current="page"' : ""}>${t}</a>`).join("")}</nav></div>
+    <div class="jump"><div class="wrap"><span class="jl">JUMP TO:</span> ${JUMP.map(([t, h]) => `<a href="${h}">${t}</a>`).join("")}</div></div>`;
   const foot = $("#foot");
   if (foot) foot.innerHTML = `<div class="wrap"><p class="px" style="color:var(--yellow);font-size:12px">PROFESSOR OCEAN: TENURE QUEST · VISUAL &amp; MEDIA ARTS · LONG BEACH CITY COLLEGE</p>
     <p>This site supplements the official LBCC evaluation process. It is not an official LBCC submission and does not replace any required signed form.
     Student evaluation figures and comments are transcribed from the Fall 2026 Individual Reports. The report PDFs themselves are not published.
-    Student work appears anonymously. No student images, video, names or grades are published until a release is on file (see <a href="ethics.html">Evidence Vault</a>).</p>
+    Student work appears anonymously. No student images, video, names or grades are published until a release is on file (see the <a href="ethics.html">Evidence Index</a>).</p>
     <p>Visual style adapted from the instructor's independently developed game <em>High Rollers</em>, including its RollerPixel typeface.</p></div>`;
 
   /* ---------- starfield (decorative) ---------- */
@@ -111,7 +115,7 @@
     <div class="stat"><b>${esc(e.ratio)}</b><span>response rate</span></div><div class="stat"><b>${e.q.filter((r) => pos(r) === tot(r)).length}/12</b><span>items with every response positive</span></div></div>`;
 
   /* ---------- HOME ---------- */
-  if (page === "home") {
+  if (page === "home" && $("#featured")) {
     $("#featured").innerHTML = P.filter((p) => p.home).map(cardHTML).join("");
     const resp = EV.reduce((a, e) => a + e.responses, 0), aud = EV.reduce((a, e) => a + e.audience, 0);
     $("#stats").innerHTML = [[COV.length, "Drive files inventoried"], [P.length, "case studies (anonymous)"], [`${resp}/${aud}`, "evaluation responses / students surveyed†"], [0, "student media published"]]
@@ -226,7 +230,17 @@
       R.push([`${e.course}: ${e.suggestions.length} suggestion comments`, "Teaching (constructive feedback)", e.source, e.pages.comments, e.term, "Survey comment", "Verified (verbatim; 1 DMA 10 comment excerpted)", "Anonymous", "Instructor (own record)", "Feedback → Action"]);
     });
     FB.forEach((t) => R.push([`Response to "${t.theme}": ${t.responses.join("; ") || "none reported"}`, "Teaching improvement", "Instructor's brief (Nov 16, 2026)", "n/a", t.course, "Self-report", "Unavailable: no dated evidence", "Public-safe", "Instructor", "Feedback → Action"]));
-    OBS.forEach((o) => R.push([`${o.type} of ${o.course} by ${o.evaluator}`, "Teaching (faculty observation)", "Not provided", "n/a", `${o.course} · Fall 2026`, "Observation", "Unavailable", "Restricted until reviewed", "Pending", "Student Voices (listed only)"]));
+    (window.OBS_FORMS || []).forEach((o) => R.push([`${o.form} observation of ${o.course} by ${o.evaluator}: overall ${o.overall}`, "Teaching (faculty observation)", o.source, "All pages", `${o.course} · observed ${o.observed}`, "Signed observation", "Verified (transcribed)", "Summary and quotes public; PDF not published", "Instructor (own personnel record)", "Faculty Observations; E-3 Q2; E-5"]));
+    [["Teach Online Seminar 3.0 completed", "Professional development", "Parchment digital badge", "Badge page", "Issued Sep 9, 2026", "Badge", "Verified", "Public-safe", "Instructor", "E-4 Q3"],
+     ["Compliance trainings incl. Diversity and Inclusion (13 min), Title IX, FERPA", "Professional development / DEIA", "8 certificates of completion", "Each certificate", "Jul 25 – Aug 6, 2026", "Certificate", "Verified", "Public-safe", "Instructor", "E-4 Q4"],
+     ["22.63 FLEX hours", "Professional development", "FLEX transcript", "—", "Fall 2026", "Transcript", "Unavailable (reported only)", "Public-safe", "Instructor", "E-4 Q3"],
+     ["Oct 28 industry advisory recommendation (3 motions carried)", "Curriculum", "Advisory attendance and approval record; draft minutes", "pp. 1–4", "Oct 28, 2026", "Meeting record", "Verified; minutes marked DRAFT FOR REVIEW", "Public-safe (member names and affiliations)", "n/a", "E-4 1(h)"],
+     ["Department approval of the A.S.", "Curriculum", "Department approval addendum", "Department Action", "—", "Approval form", "Not approved yet (fields blank)", "Public-safe", "n/a", "E-4 1(h)"],
+     ["DMA 43 / DMA 45 course proposals", "Curriculum", "CourseLeaf proposal PDFs", "Header", "Fall 2026", "Proposal draft", "Verified as drafts (no effective term)", "Public-safe", "n/a", "E-4 1(h)"],
+     ["Sep 10 and Sep 16 curriculum meetings", "Curriculum / service", "Meeting notes; minutes", "Whole documents", "Sep 10 & 16, 2026", "Meeting record", "Verified (instructor-prepared records)", "Public-safe", "n/a", "E-4 Q2"],
+     ["MLK 2027 T-shirt contest coordinator", "Service", "Contest flyer", "Footer", "Deadline Dec 2026 (TBD)", "Flyer", "Verified role; dates unverified", "Public-safe", "n/a", "E-4 Q2"],
+     ["Meet the Arts high-school breakouts", "Service / outreach", "Two slide decks", "Title slides", "Undated", "Slides", "Verified materials; date reported", "Public-safe", "n/a", "E-4 Q2"]
+    ].forEach((r) => R.push(r));
     P.forEach((p) => R.push([`Case study: ${p.title}`, "Student work", p.evidence.map((x) => x[0]).join(", "), "Drive · Student Work folder", p.courseStatus === "verified" ? `${p.course} · Fall 2026` : "Course Not Verified · Fall 2026", "Work sample", p.status === "partial" ? "Partial (content inspected; course/goal unverified)" : "Awaiting (preview frame only)", "Restricted media; anonymized description public", "Pending", "Student Creations"]));
     R.push(['DMA 10 Canvas structure: 4 units, 16 weekly Discover/Discuss/Demonstrate modules', 'Teaching (course design)', 'Canvas export dma-10-...-71864-export.imscc', 'course_settings/module_meta.xml', 'DMA 10 · exported Aug 25, 2026', 'Course export', 'Verified for Aug 25; state during term unverified', 'Public-safe', 'Instructor', 'DMA 10 Audit']);
     R.push(['DMA 10 UDL tutorial credit option', 'Teaching (UDL)', 'DMA10_71864_Marshall (1).pdf', 'p. 8', 'DMA 10 · file dated Oct 12, 2026', 'Syllabus', 'Verified that the option is stated; student use unverified', 'Public-safe', 'Instructor', 'DMA 10 Audit']);
