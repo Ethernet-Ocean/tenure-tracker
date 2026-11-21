@@ -79,4 +79,11 @@
       ${P.map((p) => `<tr><td><b>${esc(p.title)}</b><br><span class="small muted">${esc(p.attribution.split(" (")[0])}</span></td><td class="small">${esc(p.created)}</td><td>${p.courseStatus === "verified" ? esc(p.course) : "Not stated in the work"}</td><td class="small">${ST[p.status] || ""}</td></tr>`).join("")}
       </tbody></table></div>`;
   });
+
+  /* Phone layout: label every generated table cell with its column heading, so rows can stack as cards */
+  document.querySelectorAll('[data-obs-dash] table, #forms table, [data-e3-course] table, [data-e3-themes] table').forEach((t) => {
+    const heads = [...t.querySelectorAll('thead th')].map((th) => th.textContent.trim());
+    t.classList.add('stack');
+    t.querySelectorAll('tbody tr').forEach((tr) => [...tr.children].forEach((td, i) => { if (heads[i]) td.setAttribute('data-label', heads[i].charAt(0) + heads[i].slice(1).toLowerCase()); }));
+  });
 })();
