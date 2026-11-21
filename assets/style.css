@@ -3,6 +3,8 @@
    LBCC-style palette: red, black, white, warm gray. No college logo is used. */
 
 :root {
+  --link: #0645AD;      /* blue, 8.6:1 on white */
+  --link-dark: #03306F;
   --red: #A6192E;        /* 7.9:1 on white */
   --red-dark: #7A1222;
   --red-tint: #FBEDEF;
@@ -23,8 +25,9 @@
 html { scroll-behavior: auto; -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--bg); color: var(--ink); font: 20px/1.7 var(--body); }
 #stars, .balloon, .hinge, .press { display: none !important; }
-a { color: var(--red); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 2px; }
-a:hover { color: var(--red-dark); }
+a { color: var(--link); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 2px; }
+a:hover { color: var(--link-dark); }
+a:visited { color: #5B2D91; }
 :focus-visible { outline: 4px solid #1F4E99; outline-offset: 3px; }
 img { max-width: 100%; height: auto; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
@@ -60,6 +63,8 @@ section { padding: 40px 0; }
 .brand { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-size: 22px; font-weight: 700; font-family: var(--body); }
 .brand .die { display: none; }
 .brand:hover { color: #fff; text-decoration: underline; }
+.brand { flex-direction: column; align-items: flex-start; gap: 2px; letter-spacing: .04em; font-size: 26px; }
+.brand-sub { font-size: 16px; font-weight: 400; letter-spacing: 0; opacity: .95; }
 .nav { display: flex; gap: 10px; flex-wrap: wrap; margin-left: auto; }
 .nav a { color: #fff; background: transparent; border: 2px solid #fff; border-radius: 8px; padding: 10px 18px; font-size: 20px; font-weight: 700; text-decoration: none; font-family: var(--body); letter-spacing: 0; }
 .nav a:hover { background: #fff; color: var(--red); }
@@ -70,7 +75,7 @@ section { padding: 40px 0; }
 .jump a { font-size: 18px; color: var(--red); background: #fff; text-decoration: none; padding: 6px 12px; border-radius: 6px; border: 2px solid var(--line); font-weight: 700; }
 .jump a:hover { border-color: var(--red); background: var(--red-tint); color: var(--red-dark); }
 .crumb { font-size: 18px; color: var(--ink-2); margin: 0 0 6px; }
-.crumb a { color: var(--red); }
+.crumb a { color: var(--link); }
 
 /* ---------- home banner ---------- */
 .hero { padding: 0; background: var(--bg-2); border-bottom: 1px solid var(--line); }
@@ -186,3 +191,18 @@ footer .px { color: #fff !important; font-size: 19px !important; }
   details > div, details > ol { display: block !important; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* Tenure Tracker additions */
+.find td:first-child { white-space: nowrap; font-weight: 700; }
+.find td a { font-weight: 700; }
+.exh { display: inline-block; font-size: 16px; font-weight: 700; padding: 1px 8px; border-radius: 6px; border: 2px solid var(--line); background: var(--bg-2); color: var(--ink); white-space: nowrap; }
+.exh.pub { border-color: var(--link); color: var(--link); background: #EEF3FC; }
+.answer { font-size: 21px; line-height: 1.65; background: #fff; border: 2px solid var(--line); border-left: 8px solid var(--green, #1D6B3A); border-radius: 0 var(--r) var(--r) 0; padding: 18px 22px; margin: 0 0 20px; }
+.answer p:last-child { margin-bottom: 0; }
+.statgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin: 10px 0 18px; }
+.statgrid div { border: 2px solid var(--line); border-radius: 10px; padding: 14px 16px; background: #fff; }
+.statgrid b { display: block; font-size: 30px; color: var(--red); line-height: 1.15; }
+.statgrid span { font-size: 17px; color: var(--ink-2); }
+.prop summary { color: var(--ink) !important; }
+.prop { border: 2px solid var(--line); border-radius: 10px; margin: 0 0 10px; background: #fff; }
+.prop > div { padding: 0 18px 14px; }

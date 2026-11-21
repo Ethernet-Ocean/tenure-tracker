@@ -1,4 +1,4 @@
-/* Renderers for the E-3 / E-4 / E-5 / Observations pages. Data: observations.js, evaluations.js, feedback.js. */
+/* Renderers for the E-3 and E-4 pages. Data: observations.js, evaluations.js. */
 (function () {
   "use strict";
   const $ = (s) => document.querySelector(s);
@@ -31,7 +31,7 @@
           ${o.observedFacts.length ? `<h4 class="px" style="margin-top:14px">WHAT THE EVALUATOR RECORDED (SUMMARY)</h4><ul>${o.observedFacts.map((s) => `<li>${esc(s)}</li>`).join("")}</ul>` : ""}</div>
         <div><h3>SUGGESTIONS FOR IMPROVEMENT</h3><ul>${o.suggestions.map((s) => `<li>${esc(s)}</li>`).join("")}</ul>
           ${o.suggestionsNote ? `<p class="small muted">${esc(o.suggestionsNote)}</p>` : ""}
-          <p><a href="e3.html#q2">▶ Response: E-3 Q2 improvement matrix</a></p></div>
+          <p><a href="e3.html#q2">My response: E-3 Q2</a></p></div>
       </div></section>`).join("");
   }
 

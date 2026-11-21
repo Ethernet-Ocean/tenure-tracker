@@ -1,6 +1,6 @@
-/* Professor Ocean: Tenure Quest. Shared behaviour; no build step, no dependencies.
-   Evidence-first: every number and quote is rendered from assets/evaluations.js, assets/feedback.js,
-   assets/projects.js and assets/coverage.js, which are transcribed from the original sources. */
+/* Tenure Tracker. Shared behaviour; no build step, no dependencies.
+   Evidence-first: evaluation figures and quotes are rendered from assets/evaluations.js and assets/observations.js,
+   which are transcribed from the original signed reports. */
 (function () {
   "use strict";
   const $ = (s, r = document) => r.querySelector(s);
@@ -13,22 +13,24 @@
   /* ---------- chrome ---------- */
   // The site covers Appendix E-3 and E-4 only.
   const NAV = [
+    ["index.html", "START HERE", ["home"]],
     ["e3.html", "E-3 STUDENT EVALUATIONS", ["e3"]],
     ["e4.html", "E-4 SELF-EVALUATION", ["e4"]]
   ];
   const JUMP = [
     ["E-3 Q1", "e3.html#q1"], ["E-3 Q2", "e3.html#q2"], ["E-3 Q3", "e3.html#q3"],
-    ["E-4 Q1 (a–h)", "e4.html#q1"], ["Credentials", "e4.html#credentials"], ["E-4 Q2 Service", "e4.html#q2"], ["E-4 Q3 Equitable teaching", "e4.html#q3"], ["E-4 Q4 DEIA", "e4.html#q4"]
+    ["1(a)", "e4.html#q1a"], ["1(b)", "e4.html#q1b"], ["1(c)", "e4.html#q1c"], ["1(d)", "e4.html#q1d"], ["1(e)", "e4.html#q1e"], ["1(f)", "e4.html#q1f"], ["1(g)", "e4.html#q1g"], ["1(h)", "e4.html#q1h"],
+    ["E-4 Q2", "e4.html#q2"], ["E-4 Q3", "e4.html#q3"], ["E-4 Q4", "e4.html#q4"]
   ];
   const die = `<svg class="die" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="26" height="26" rx="7" fill="#F06B9B" stroke="#0d0f24" stroke-width="3"/><circle cx="11" cy="11" r="2.6" fill="#FAEF88"/><circle cx="21" cy="21" r="2.6" fill="#FAEF88"/><circle cx="16" cy="16" r="2.6" fill="#FAEF88"/></svg>`;
   const header = $("#bar");
-  if (header) header.innerHTML = `<div class="wrap"><a class="brand" href="index.html">${die}<span>Oceano J. Marshall · Tenure Portfolio</span></a>
+  if (header) header.innerHTML = `<div class="wrap"><a class="brand" href="index.html"><span>TENURE TRACKER</span><small class="brand-sub">Oceano Marshall | LBCC Faculty Tenure Portfolio | Year One (2026–2027)</small></a>
     <nav class="nav" aria-label="Main">${NAV.map(([h, t, ks]) => `<a href="${h}"${ks.includes(page) ? ' aria-current="page"' : ""}>${t}</a>`).join("")}</nav></div>
     <div class="jump"><div class="wrap"><span class="jl">JUMP TO:</span> ${JUMP.map(([t, h]) => `<a href="${h}">${t}</a>`).join("")}</div></div>`;
   const foot = $("#foot");
-  if (foot) foot.innerHTML = `<div class="wrap"><p class="px">Oceano J. Marshall · Tenure Portfolio · Visual &amp; Media Arts · Long Beach City College</p>
+  if (foot) foot.innerHTML = `<div class="wrap"><p class="px">TENURE TRACKER · Oceano Marshall · Visual &amp; Media Arts · Long Beach City College</p>
     <p>This site supplements the official LBCC evaluation process. It is not an official LBCC submission and does not replace any required signed form.
-    Student evaluation figures and comments are transcribed from the Fall 2026 Individual Reports. The report PDFs themselves are not published.
+    Student evaluation figures and comments are transcribed from the Fall 2026 Individual Reports; signed evaluations, observation forms and personnel records are not published here and are available to the committee on request.
     No student names, grades or work samples are published.</p></div>`;
 
   /* ---------- starfield (decorative) ---------- */
