@@ -253,7 +253,7 @@ section { scroll-margin-top: 8px; }
 .bigbtns a, .docbtns a, .secnav a { overflow-wrap: anywhere; }
 @media (max-width: 700px) {
   .bar .wrap { min-height: 0; gap: 8px; padding: 10px 0; }
-  .nav { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 100%; margin: 0; }
+  .nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; width: 100%; margin: 0; }
   .nav a { justify-content: center; text-align: center; padding: 6px 8px; font-size: 16px; min-height: 48px; line-height: 1.2; }
   .bigbtns a { padding: 18px; }
 }
@@ -268,3 +268,29 @@ section { scroll-margin-top: 8px; }
   .tbl-wrap:has(table.stack) { overflow: visible; border: 0; }
 }
 @media (max-width: 700px) { table.stack { min-width: 0; } table.stack tr { width: auto; } }
+
+/* ===== Equal-size, aligned buttons (Nov 21) ===== */
+.bar .wrap { flex-direction: column; align-items: stretch; }
+.brand { align-self: flex-start; }
+.nav { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; width: 100%; margin: 0; }
+.nav a { justify-content: center; text-align: center; min-height: 56px; padding: 8px 10px; line-height: 1.2; }
+.secnav { align-items: stretch; }
+.secnav li { display: flex; }
+.secnav a { flex: 1; min-height: 92px; justify-content: center; }
+.bigbtns { align-items: stretch; }
+.bigbtns a { height: 100%; }
+.docbtns { align-items: stretch; }
+.docbtns a { height: 100%; display: flex; flex-direction: column; justify-content: center; min-height: 110px; }
+.statgrid > div { display: flex; flex-direction: column; }
+/* Converted documents */
+.doc { font-size: 20px; }
+.doc table { min-width: 0; margin: 12px 0; }
+.doc td, .doc th { border: 1px solid var(--line); }
+.doc img { max-width: 100%; height: auto; }
+.doc h1 { font-size: 30px !important; } .doc h2 { font-size: 26px; } .doc h3 { font-size: 22px; }
+@media (max-width: 700px) { .nav { grid-template-columns: repeat(2, minmax(0, 1fr)); } .nav a { min-height: 52px; font-size: 16px; } .doc table { display: block; overflow-x: auto; } }
+/* Every row of buttons the same height */
+.secnav, .docbtns, .bigbtns, .nav { grid-auto-rows: 1fr; }
+.nav a { overflow-wrap: anywhere; hyphens: auto; }
+/* Titles line up across each row */
+.secnav a, .docbtns a { justify-content: flex-start; }
